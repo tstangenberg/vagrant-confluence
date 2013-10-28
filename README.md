@@ -7,7 +7,7 @@ What will it do?
 ----------------
 
 1. Download Ubuntu 12.04
-1. Create a new virtual machine, install Ubuntu and forward port 8080
+1. Create a new virtual machine, install Ubuntu and forward port 8090
 1. Inside the virtual machine 
   1. Download & Install [Java][6]
   1. Download & Install & Start [Confluence][1]
@@ -24,8 +24,12 @@ cd vagrant-confluence
 ```
 
 1. Start up and provision automatically all dependencies in the vm
-	`vagrant up --provision` 
-1. *** You're almost DONE! *** --> open the [confluence setup page][8] (http://localhost:8080/setup) & configure it
+
+```
+vagrant up --provision
+```
+
+1. *** You're almost DONE! *** --> open the [confluence setup page][8] (http://localhost:8090) & configure it
 
 
 
@@ -34,6 +38,6 @@ cd vagrant-confluence
 [3]: http://puppetlabs.com/
 [4]: https://www.virtualbox.org 
 [5]: http://git-scm.com
-[6]: http://jdk7.java.net
+[6]: http://openjdk.java.net/
 [7]: http://www.iterm2.com
-[8]: http://localhost:8080
+[8]: http://localhost:8090
