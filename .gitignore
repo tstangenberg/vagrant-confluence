@@ -1,3 +1,4 @@
 .vagrant/
-atlassian-jira-6.1.1-standalone/
-jira-home/
+atlassian-confluence-5.3.1/
+confluence-home/
+logs/

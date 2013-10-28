@@ -1,5 +1,5 @@
-vagrant-stash
-=============
+vagrant-confluence
+==================
 
 Instant provisioning of [Atlassian's Confluence (version 5.3.1)][1] with the help of [Vagrant][2] & [Puppet][3] 
 
