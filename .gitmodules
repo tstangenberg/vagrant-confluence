@@ -7,3 +7,6 @@
 [submodule "modules/java"]
 	path = modules/java
 	url = https://github.com/tstangenberg/puppetlabs-java.git
+[submodule "modules/collectd"]
+	path = modules/collectd
+	url = https://github.com/tstangenberg/puppet-module-collectd.git

@@ -63,3 +63,25 @@ class confluence {
 }
 
 include confluence
+
+include apt
+
+# this repo is needed vor collectd version 5.3
+apt::ppa { "ppa:vbulax/collectd5": }
+
+exec { "apt-update":
+  command => '/usr/bin/apt-get update',
+  user => root,
+  require => Apt::Ppa["ppa:vbulax/collectd5"],
+}
+
+
+class { '::collectd':
+  require => Exec["apt-update"]
+}
+
+include collectd
+
+class { 'collectd::plugin::write_graphite':
+  graphitehost => '10.0.2.2',
+}
