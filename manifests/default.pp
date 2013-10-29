@@ -39,7 +39,7 @@ class confluence {
   append_if_no_such_line { 
     "configure-confluence-home":
     file => "$confluence-app/confluence/WEB-INF/classes/confluence-init.properties",
-    line => "confluence.home=$confluence-home",
+    line => "\nconfluence.home=$confluence-home",
   }
 
   exec {
